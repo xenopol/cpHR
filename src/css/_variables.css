@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
+
+$font-main: "Open Sans", Helvetica, Arial, sans-serif;
+
+$white: #FFF;
+$black: #000;
+$green-logo: #005448;
+$gray: #EAEAEA;
+$gray-darker: #8A8A8A;
+$blue: #607D8B;
+$blue-dark: #335057;
+$blue-darker: #1c2a2e;
+$green-success: #4CAF50;
+$orange-fail: #FF5722;
+$text-shadow: #666;
+
+$main-width: 120rem;
+$section-width: 70%;
+$margin-left: 10rem;

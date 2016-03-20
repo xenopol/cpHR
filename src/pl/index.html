@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Uzyskaj elastyczny personel do swojego projektu.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>cpHR - Employment agency</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="shortcut icon" type="image/png" href="/favicon.jpg">
+	</head>
+	<body>
+		<header>
+			<div class="logo">cpHR</div>
+			<div class="secondary-nav">
+				<div class="grid clearfix">
+					<div class="burger-menu">
+						<span class="burger-item"></span>
+					</div>
+					<div class="languages">
+						<img class="flag flag-active" src="../img/poland.png">
+						<div class="lang-choice">
+							<a class="language" href="../en"><img class="flag" src="../img/england.png"><span>English</span></a>
+							<a class="language" href="../"><img class="flag" src="../img/denmark.png"><span>Dansk</span></a>
+						</div>
+					</div>
+					<a class="call-us" href="tel:+45-50-32-75-25">Zadzwon do nas: +45 50 32 75 253</a>
+				</div>
+			</div>
+			<nav class="main-nav">
+				<div class="grid clearfix">
+					<a class="nav-link" href="#contact">Kontakt</a>
+					<a class="nav-link" href="#contact">Cennik</a>
+					<a class="nav-link" href="#contact">Zamowienie</a>
+					<a class="nav-link" href="#about">O nas</a>
+				</div>
+			</nav>
+		</header>
+		<section class="hero">
+			<div class="hero-body grid">
+				<div class="hero-text">
+					<p>Uzyskaj elastyczny personel do swojego projektu.</p>
+					<a href="#about" class="hero-button">Czytaj więcej</a>
+			</div>
+			</div>
+		</section>
+		<section class="services grid">
+			<div class="service">
+				<div class="service-img" style="background-image:url(../img/demolition.jpg);"></div>
+				<div class="service-title">Rozbiórki</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(../img/renovation.jpg);"></div>
+				<div class="service-title">Renowacja & Rozbudowa</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(../img/patio.jpg);"></div>
+				<div class="service-title">Ogród & Taras</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(../img/carpentry.jpg);"></div>
+				<div class="service-title">Stolarka</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(../img/painting.jpg);"></div>
+				<div class="service-title">Malowanie</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(../img/plumbing.jpg);"></div>
+				<div class="service-title">Hydraulika</div>
+			</div>
+		</section>
+		<section id="about" class="about">
+			<div class="grid">
+				<h1 class="section-title">O nas</h1>
+				<p class="about-text">CPHR jest duńską agencją specjalizująca się w rekrutacji kadr? ( Human Resources), zapewniając naszym klientom kompetentny i doświadczony personel do krótkotrwałego lub dlugotrwalego zatrudnienia.</p>
+				<p class="about-text">CPHR działa blisko z polskimi agencjami rekrutacji, wysoko wykwalifikowanych w znajdowaniu pracowników z odpowiednim doświadczeniem do każdego zadania w budownictwie, przemyśle, rolnictwie i wszelkich manualnych pracach.</p>
+				<p class="about-text">Nasi pracownicy tymczasowo mieszkaja w Danii, wydatki zwiazane z pobytem pokrywamy my, co oznacza, że jedynym kosztem naszych klientów jest wynagrodzenie pracownika, co powoduje proste rozliczenia i brak komplikacji dla pracownikòw.</p>
+			</div>
+		</section>
+		<section id="contact" class="contact clearfix">
+			<div class="grid">
+				<h1 class="section-title">Kontakt / Zamówienie</h1>
+				<h2 class="contact-text">Zamówienie - wypełnij formularz lub zadzwon: <a class="contact-phone" href="tel:+45-50-32-75-25">+45 50 32 75 25</a></h2>
+				<form id="send-email-form" action="php/mail.php" method="post">
+					<div class="form-section">
+						<span class="form-headline">Rodzaj zadania:</span>
+						<div class="form-groups">
+							<div class="form-group">
+								<input id="carpentry" type="checkbox" name="workTypes[]" value="carpentry">
+								<label for="carpentry">Stolarz</label>
+							</div>
+							<div class="form-group">
+								<input id="demolition" type="checkbox" name="workTypes[]" value="demolition">
+								<label for="demolition">Rozbiórka</label>
+							</div>
+							<div class="form-group">
+								<input id="brickLayer" type="checkbox" name="workTypes[]" value="brickLayer">
+								<label for="brickLayer">Murarz</label>
+							</div>
+							<div class="form-group">
+								<input id="variousTasks" type="checkbox" name="workTypes[]" value="variousTasks">
+								<label for="variousTasks">Mieszany</label>
+							</div>
+							<div class="form-group">
+								<input id="other" type="checkbox" name="workTypes[]" value="other">
+								<label for="other">Andet</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-section">
+						<span class="form-headline">Ilu pracowników:</span>
+						<div class="form-groups">
+							<input id="one" type="radio" name="numberOfWorkers" value="one">
+							<label for="one">1</label><br>
+							<input id="two" type="radio" name="numberOfWorkers" value="two">
+							<label for="two">2</label><br>
+							<input id="three" type="radio" name="numberOfWorkers" value="three">
+							<label for="three">3</label><br>
+							<input id="more" type="radio" name="numberOfWorkers" value="more">
+							<label for="more">Wiecej</label><br>
+						</div>
+					</div>
+					<div class="form-section">
+						<span class="form-headline">Gdzie jest zadanie:</span>
+						<div class="form-groups">
+							<textarea placeholder="Gdzie" name="workAddress" required></textarea>
+						</div>
+					</div>
+					<div class="form-section">
+						<span class="form-headline">Dane kontaktowe:</span>
+						<div class="form-groups">
+							<input class="form-contact-info" type="text" name="userInfo[name]" placeholder="Lmie" required>
+							<input class="form-contact-info" type="tel" name="userInfo[phone]" placeholder="Numer telefonu" required>
+							<input class="form-contact-info" type="email" name="userInfo[email]" placeholder="Email" required>
+							<input class="form-contact-info" type="text" name="userInfo[cvr]" placeholder="Numer CVR">
+						</div>
+					</div>
+					<div class="form-section clearfix">
+						<button class="form-button" type="submit">Wyslij</button>
+					</div>
+				</form>
+				<div class="form-result">
+					<p class="form-success">Twój e-mail został wysłany!</p>
+					<p class="form-fail">Wystąpił błąd, spróbuj ponownie.</p>
+				</div>
+			</div>
+		</section>
+		<section class="cta">
+				<p class="cta-title">Jakieś pytania?</p>
+				<div class="cta-item">
+					<img class="phone-icon" src="../img/phone.png">
+					<a href="tel:+45-50-32-75-25">+45 50 32 75 25</a>
+				</div>
+				<div class="cta-item">
+					<img class="email-icon" src="../img/email.png">
+					<a href="mailto:info@cphr.dk">info@cphr.dk</a>
+				</div>
+			</section>
+		<footer class="footer">
+			<p class="disclaimer">Wszelkie prawa zastrzezone cpHR IVS 2015</p>
+			<address class="address">Gasvaerksvej 18a, 1656 KBH V</address>
+			<p class="cvr">CVR 3743 8588</p>
+		</footer>
+
+		<script src="/js/app.js"></script>
+	</body>
+</html>

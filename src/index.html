@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="dk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Med håndværksvikarer fra chPR får du fleksibel arbejdskraft du kan stole på.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>cpHR - Employment agency</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="shortcut icon" type="image/png" href="/favicon.jpg">
+	</head>
+	<body>
+		<header>
+			<div class="logo">cpHR</div>
+			<div class="secondary-nav">
+				<div class="grid clearfix">
+					<div class="burger-menu">
+						<span class="burger-item"></span>
+					</div>
+					<div class="languages">
+						<img class="flag flag-active" src="img/denmark.png">
+						<div class="lang-choice">
+							<a class="language" href="en/"><img class="flag" src="img/england.png"><span>English</span></a>
+							<a class="language" href="pl/"><img class="flag" src="/img/poland.png"><span>Polskie</span></a>
+						</div>
+					</div>
+					<a class="call-us" href="tel:+45-50-32-75-25">Ring til os: +45 50 32 75 253</a>
+				</div>
+			</div>
+			<nav class="main-nav">
+				<div class="grid clearfix">
+					<a class="nav-link" href="#contact">Kontakt</a>
+					<a class="nav-link" href="#contact">Pris</a>
+					<a class="nav-link" href="#contact">Bestil arbejdere</a>
+					<a class="nav-link" href="#about">Om os</a>
+				</div>
+			</nav>
+		</header>
+		<section class="hero">
+			<div class="hero-body grid">
+				<div class="hero-text">
+					<p>Med håndværksvikarer fra chPR får du fleksibel arbejdskraft du kan stole på.</p>
+					<a href="#about" class="hero-button">Læs mere</a>
+				</div>
+			</div>
+		</section>
+		<section class="services grid">
+			<div class="service">
+				<div class="service-img" style="background-image:url(img/demolition.jpg);"></div>
+				<div class="service-title">Nedrivning</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(img/renovation.jpg);"></div>
+				<div class="service-title">Renovering & Udbygning</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(img/patio.jpg);"></div>
+				<div class="service-title">Have & terrase</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(img/carpentry.jpg);"></div>
+				<div class="service-title">Tømrer</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(img/painting.jpg);"></div>
+				<div class="service-title">Maler</div>
+			</div>
+			<div class="service">
+				<div class="service-img" style="background-image:url(img/plumbing.jpg);"></div>
+				<div class="service-title">VVS</div>
+			</div>
+		</section>
+		<section id="about" class="about">
+			<div class="grid">
+				<h1 class="section-title">Om os</h1>
+				<p class="about-text">CPHR er leverer vikarer til byggebranchen samt private. Vi sørger for at vores kunder har den arbejdskraft de skal bruge til både kortere og længere opgaver. Vi har et samarbejde med et polsk vikarbureau som fokuserer på at levere kvalificeret personale til byggebranchen, industrien, landbruget og andet nicher der efterspørger håndværkere og arbejdsmænd.</p>
+				<p class="about-text">CPHRs vikarer bor midlertidigt i Denmark så længe der er brug for dem til en given opgave.</p>
+				<p class="about-text">Du kan bestille og afbestille arbejde fra dag til dag. Såfremt I mangler ekstra arbejdskraft eller efterspørger andre kompetencer hen af vejen kan vi levere med dag til dag varsel.</p>
+			</div>
+		</section>
+		<section id="contact" class="contact clearfix">
+			<div class="grid">
+				<h1 class="section-title">Kontakt / Bestil arbejdere</h1>
+				<h2 class="contact-text">Bestil arbejdere - udfyld formularen eller ring: <a class="contact-phone" href="tel:+45-50-32-75-25">+45 50 32 75 25</a></h2>
+				<form id="send-email-form" action="php/mail.php" method="post">
+					<div class="form-section">
+						<span class="form-headline">Hvilken type opgave:</span>
+						<div class="form-groups">
+							<div class="form-group">
+								<input id="carpentry" type="checkbox" name="workTypes[]" value="carpentry">
+								<label for="carpentry">Tømrer</label>
+							</div>
+							<div class="form-group">
+								<input id="demolition" type="checkbox" name="workTypes[]" value="demolition">
+								<label for="demolition">Nedrivning</label>
+							</div>
+							<div class="form-group">
+								<input id="brickLayer" type="checkbox" name="workTypes[]" value="brickLayer">
+								<label for="brickLayer">Murer</label>
+							</div>
+							<div class="form-group">
+								<input id="variousTasks" type="checkbox" name="workTypes[]" value="variousTasks">
+								<label for="variousTasks">Blandet</label>
+							</div>
+							<div class="form-group">
+								<input id="other" type="checkbox" name="workTypes[]" value="other">
+								<label for="other">Andet</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-section">
+						<span class="form-headline">Hvor mange mænd:</span>
+						<div class="form-groups">
+							<input id="one" type="radio" name="numberOfWorkers" value="one">
+							<label for="one">1</label><br>
+							<input id="two" type="radio" name="numberOfWorkers" value="two">
+							<label for="two">2</label><br>
+							<input id="three" type="radio" name="numberOfWorkers" value="three">
+							<label for="three">3</label><br>
+							<input id="more" type="radio" name="numberOfWorkers" value="more">
+							<label for="more">Flere</label><br>
+						</div>
+					</div>
+					<div class="form-section">
+						<span class="form-headline">Hvor henne er opgaven:</span>
+						<div class="form-groups">
+							<textarea placeholder="Hvor" name="workAddress" required></textarea>
+						</div>
+					</div>
+					<div class="form-section">
+						<span class="form-headline">Kontakt oplysninger:</span>
+						<div class="form-groups">
+							<input class="form-contact-info" type="text" name="userInfo[name]" placeholder="Navn" required>
+							<input class="form-contact-info" type="tel" name="userInfo[phone]" placeholder="Tlf" required>
+							<input class="form-contact-info" type="email" name="userInfo[email]" placeholder="Email" required>
+							<input class="form-contact-info" type="text" name="userInfo[cvr]" placeholder="CVR (VAT)">
+						</div>
+					</div>
+					<div class="form-section clearfix">
+						<button class="form-button" type="submit">Send</button>
+					</div>
+				</form>
+				<div class="form-result">
+					<p class="form-success">Din email blev sendt med succes!</p>
+					<p class="form-fail">Der opstod en fejl, prøv igen.</p>
+				</div>
+			</div>
+		</section>
+		<section class="cta">
+				<p class="cta-title">Har du spørgsmål?</p>
+				<div class="cta-item">
+					<img class="phone-icon" src="img/phone.png">
+					<a href="tel:+45-50-32-75-25">+45 50 32 75 25</a>
+				</div>
+				<div class="cta-item">
+					<img class="email-icon" src="img/email.png">
+					<a href="mailto:info@cphr.dk">info@cphr.dk</a>
+				</div>
+			</section>
+		<footer class="footer">
+			<p class="disclaimer">Alt materiale tilhører cpHR IVS 2015</p>
+			<address class="address">Gasvaerksvej 18a, 1656 KBH V</address>
+			<p class="cvr">CVR 3743 8588</p>
+		</footer>
+		<script src="/js/app.js"></script>
+	</body>
+</html>
